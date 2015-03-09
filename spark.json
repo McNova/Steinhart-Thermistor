@@ -1,0 +1,7 @@
+{
+  "name": "Steinhart-Thermistor",
+  "author": "Christian Vallières",
+  "license": "GPL",
+  "version": "1.0.0",
+  "description": "4 coefficients Steinhart version of Thermistor library."
+}
