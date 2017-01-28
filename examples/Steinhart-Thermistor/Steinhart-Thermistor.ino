@@ -10,14 +10,14 @@ void loop() {
 	//Always call calcResistance() first.
 	//It's the only function that read the ADC value.
 	//Otherwise you could get a different value for each temperature unit.
-	//You can specify a number of samples. Default = 1.
+	//You can specify a number of samples. Default = 3.
 	Thermistor.calcResistance();
 	Serial.print("Thermistor resistance: ");
 	Serial.println(Thermistor.getResistance());
 	Serial.print("Volts: ");
 	Serial.println(Thermistor.getVolts());
 	Serial.print("Analog value at pin: ");
-	Serial.println(Thermistor.getAval());	
+	Serial.println(Thermistor.getAval());
 	Serial.print("Kelvin: ");
 	Serial.println(Thermistor.getTempK());
 	Serial.print("Celsius: ");

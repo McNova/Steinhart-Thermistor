@@ -9,7 +9,7 @@ int Thermistor::getAdc(int numsamples) {
     // Initialise vars
     int total = 0;
     int temp = 0;
-    
+
     // After looking at all kinds of fancy median libraries etc, a simple average on a small set (3) works well
     // The real secret is to get your probe returning sensible avals that don't vary much
     for(int i = 0; i < numsamples; i++) {
@@ -51,11 +51,11 @@ Thermistor::Thermistor(int _pin, int _RESISTOR, double _A1, double _B1, double _
 double Thermistor::calcResistance(int numsamples) {
     // From memory the -1 was part of the voltage dividor calc, not a mistake from the 4096 - 1 typical process
     // Also you divide if its pullup vs pulldown
-    _resistance = _RESISTOR / ((float) _ADC / getAdc(numsamples) - 1.0f); 
-    
+    _resistance = _RESISTOR / ((float) _ADC / getAdc(numsamples) - 1.0f);
+
     // Get the current voltage, its nice to know
     calcVolts();
-    
+
     return _resistance;
 }
 

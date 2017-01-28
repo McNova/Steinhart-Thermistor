@@ -5,8 +5,8 @@ class Thermistor {
         int _ADC = 4095;
         int _pin;
         int _RESISTOR;
-        int getAdc(int numsamples);        
-        double _aval;        
+        int getAdc(int numsamples);
+        double _aval;
         double _A1;
         double _B1;
         double _C1;
