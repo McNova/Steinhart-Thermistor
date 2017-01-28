@@ -1,5 +1,6 @@
-Steinhart-Thermistor
-=====================
+Steinhart-Thermistor v2
+=======================
+
 4 coefficients Steinhart version of Thermistor library.
 
 1/T = A + B*log(R/Rt) + C*log(R/Rt)^2 + D*log(R/Rt)^3

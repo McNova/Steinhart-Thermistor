@@ -1,4 +1,4 @@
-#include "Steinhart-Thermistor/Steinhart-Thermistor.h"
+#include "Steinhart-Thermistor.h"
 
 Thermistor Thermistor(A0);
 
@@ -13,11 +13,11 @@ void loop() {
 	//You can specify a number of samples. Default = 1.
 	Thermistor.calcResistance();
 	Serial.print("Thermistor resistance: ");
-	Serial.println(Thermistor.getResistance();
+	Serial.println(Thermistor.getResistance());
 	Serial.print("Volts: ");
-	Serial.println(Thermistor.getVolts();
+	Serial.println(Thermistor.getVolts());
 	Serial.print("Analog value at pin: ");
-	Serial.println(Thermistor.getAval();	
+	Serial.println(Thermistor.getAval());	
 	Serial.print("Kelvin: ");
 	Serial.println(Thermistor.getTempK());
 	Serial.print("Celsius: ");
